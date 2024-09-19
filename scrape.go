@@ -100,7 +100,7 @@ func main() {
 		},
 	}
 
-	file, err := os.Create("results.txt")
+	file, err := os.Create("results" + ano + curso + ".txt")
 	if err != nil {
 		log.Fatalln("Failed to create file:", err)
 	}
